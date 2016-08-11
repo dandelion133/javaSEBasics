@@ -1,0 +1,63 @@
+package com.uestc.qianhaifeng;
+
+import java.util.HashSet;
+
+public class HashCodeTest
+{
+	public static void main(String[] args)
+	{
+		HashSet set = new HashSet();
+
+		S s1 = new S("zhangsan");
+		S s2 = new S("zhangsan");
+
+		set.add(s1);
+		set.add(s2);
+
+		System.out.println(set);
+	}
+}
+
+
+class S
+{
+	String name;
+	public S(String name)
+	{
+		this.name = name;
+	}
+	
+	public int HashCode()
+	{
+		return this.name.hashCode();//调用String类的HashCoded方法
+	}
+	
+	public boolean equals(Object obj)
+	{
+		
+		if(this == obj)
+		{
+			return true;
+		}
+		else if(obj != null && obj instanceof S)
+		{
+			S s = (S)obj;
+			if(this.name.equals(s.name))
+			{
+				return true;
+			}
+			//return false;
+		}
+		return false;
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+}

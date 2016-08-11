@@ -1,0 +1,23 @@
+package com.uestc.qianhaifeng;
+
+public class NodeTest
+{
+	public static void main(String[] args)
+	{
+		Node node1 = new Node("qian");
+		Node node2 = new Node("hai");
+		Node node3 = new Node("feng");
+		
+		node1.next = node2;
+		node2.next = node3;
+		node3.next = node1;
+		
+		System.out.println(node1.next.next.data);
+		
+		/////
+		
+		
+		
+		
+	}
+}

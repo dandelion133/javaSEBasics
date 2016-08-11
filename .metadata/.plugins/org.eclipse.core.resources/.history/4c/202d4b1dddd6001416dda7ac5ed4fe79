@@ -1,0 +1,51 @@
+package com.uestc.qianhaifeng;
+
+import java.util.Comparator;
+
+public class TreeSetOrder
+{
+	
+}
+class Person
+{
+	int age;
+	
+	public Person(int age)
+	{
+		this.age = age;
+	}
+	
+	
+	
+	
+}
+class PersonComparator implements Comparator
+{
+	public int Comparator(Object arg0,Object arg1)
+	{
+		Person p1 = (Person)arg0;
+		Person p2 = (Person)arg1;
+		
+		return p2.age - p1.age;
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

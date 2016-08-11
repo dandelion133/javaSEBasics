@@ -1,0 +1,33 @@
+package com.uestc.qianhaifeng;
+
+public class GenericHashSet
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}
+class Person
+{
+	int age;
+	String name;
+	String address;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+

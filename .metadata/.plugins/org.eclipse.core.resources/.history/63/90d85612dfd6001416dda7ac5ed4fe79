@@ -1,0 +1,21 @@
+package com.uestc.qianhaifeng;
+
+import java.util.Comparator;
+
+public class TreeSetOrder2
+{
+	
+}
+class MyComparator implements Comparator//重写接口Comparator类中的compare方法
+{
+	public int compare(Object arg0,Object arg1)
+	{
+		String p1 = (String)arg0;
+		String p2 = (String)arg1;
+		
+		return p2.compareTo(p1);
+		
+		
+		
+	}
+}

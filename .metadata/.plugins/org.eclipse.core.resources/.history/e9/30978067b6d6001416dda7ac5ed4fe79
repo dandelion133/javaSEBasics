@@ -1,0 +1,13 @@
+package com.uestc.qianhaifeng;
+
+import java.util.LinkedList;
+private LinkedList list = new LinkedList();
+
+
+public class MyQueue
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

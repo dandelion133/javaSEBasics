@@ -1,0 +1,15 @@
+package com.uestc.qianhaifeng;
+
+public class Environment
+{
+	private StrategyTest strategy;//定义类中国属性
+	 //定义构造方法
+	public Environment(StrategyTest strategy)
+	{
+		this.strategy = strategy;
+	}
+	
+	
+	
+	
+}

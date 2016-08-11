@@ -1,0 +1,12 @@
+package com.uestc.qianhaifeng;
+
+public class HashCodeTest
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}
+
+
+

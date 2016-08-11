@@ -1,0 +1,23 @@
+package com.uestc.qianhaifeng;
+
+import java.util.TreeSet;
+////根据其元素的自然顺序进行排序。
+public class TreeSetTest
+{
+	
+	public static void main(String[] args)
+	{
+		TreeSet set = new TreeSet();
+		set.add("a");
+		set.add("b");
+		set.add("c");
+		set.add("f");
+		set.add("f");
+		
+		System.out.println(set);
+		
+		
+		
+		
+	}
+}

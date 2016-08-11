@@ -1,0 +1,46 @@
+package com.uestc.qianhaifeng;
+
+public class HashCodeTest
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}
+
+
+class S
+{
+	String name;
+	public S(String name)
+	{
+		this.name = name;
+	}
+	
+	public int HashCode()
+	{
+		return name.hashCode();//调用String类的HashCoded方法
+	}
+	
+	public boolean equals(Object obj)
+	{
+		if(this == obj)
+		{
+			return ture;
+		}
+		else if(obj != null && obj instanceof S)
+		{
+			if(this.name.equals(obj.name))
+			{
+				return ture;
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+}

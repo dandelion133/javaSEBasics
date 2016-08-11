@@ -1,0 +1,40 @@
+package com.uestc.qianhaifeng;
+
+import java.util.LinkedList;
+
+//import java.util.LinkedList;
+
+
+
+public class MyQueue
+{
+	
+	
+	private LinkedList list = new LinkedList();
+	
+	public void put(Object o)
+	{
+		list.addLast(o);
+	}
+	public Object get()
+	{
+		return list.removeFirst();
+	}
+	
+	public boolean isEmpty()
+	{
+		return list.isEmpty();
+	}
+	
+	public static void main(String[] args)
+	{
+		MyQueue myQueue = new MyQueue();
+		myQueue.put("qian");
+		myQueue.put("hai");
+		myQueue.put("feng");
+		
+		System.out.println(myQueue.get());
+		
+		
+	}
+}

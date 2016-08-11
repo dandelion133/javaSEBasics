@@ -1,0 +1,136 @@
+package com.uestc.qianhaifeng;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class GenericHashSet
+{
+	public static void main(String[] args)
+	{
+		Person p1 = new Person(24,"chengdu","qianhaifeng");
+		Person p2 = new Person(23,"chengdu","maojingqi");
+		Person p3 = new Person(24,"wuhu","qianhaifeng");
+		Person p4 = new Person(23,"shangrao","maojingqi");
+		
+		HashSet<Person> set = new HashSet<Person>();
+		
+		set.add(p1);
+		set.add(p2);
+		set.add(p3);
+		set.add(p4);
+		
+		for(Iterator<Person> itr = set.iterator();itr.hasNext();)
+		{
+			Person p = itr.next();
+			int age = p.getAge();
+			String name = p.getName();
+			String address = p.getAddress();
+			
+			System.out.println(name + " - " + age + " - " + address);
+			
+		}
+		
+		
+		
+		
+		
+	}
+}
+class Person
+{
+	int age;
+	String name;
+	String address;
+	
+	public Person(int age,String name,String address)
+	{
+		this.address = address;
+		this.age = age;
+		this.name = name;
+	}
+	
+	
+	
+	public int getAge()
+	{
+		return age;
+	}
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public String getAddress()
+	{
+		return address;
+	}
+	public void setAddress(String address)
+	{
+		this.address = address;
+	}
+	@Override/*
+	public int hashCode()
+	{
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + age;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Person other = (Person) obj;
+		if (address == null)
+		{
+			if (other.address != null)
+				return false;
+		}
+		else if (!address.equals(other.address))
+			return false;
+		if (age != other.age)
+			return false;
+		if (name == null)
+		{
+			if (other.name != null)
+				return false;
+		}
+		else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+

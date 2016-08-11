@@ -1,0 +1,39 @@
+package com.uestc.qianhaifeng;
+
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetOrder2
+{
+	public static void main(String[] args)
+	{
+		TreeSet set = new TreeSet(new MyComparator());
+		
+		set.add("aaa");
+		set.add("bbb");
+		set.add("ccc");
+		set.add("ddd");
+		set.add("eee");
+		
+		for(Iterator itr = set.iterator();itr.hasNext();)
+		{
+			String s = (String)itr.next();
+			System.out.println(s);
+		}
+		
+	}
+}
+class MyComparator implements Comparator//重写接口Comparator类中的compare方法
+{
+	public int compare(Object arg0,Object arg1)
+	{
+		String p1 = (String)arg0;
+		String p2 = (String)arg1;
+		
+		return p1.compareTo(p2);
+		
+		
+		
+	}
+}

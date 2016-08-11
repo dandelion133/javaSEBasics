@@ -1,0 +1,41 @@
+package com.uestc.qianhaifeng;
+
+public class NodeTest
+{
+	public static void main(String[] args)
+	{
+		Node node1 = new Node("qian");
+		Node node2 = new Node("hai");
+		Node node3 = new Node("feng");
+		Node node4 = new Node("love");
+		Node node5 = new Node("mao");
+		Node node6 = new Node("jing");
+		Node node7 = new Node("qi");
+		
+		node1.next = node2;
+		node2.next = node3;
+		node3.next = node4;
+		node4.next = node5;
+		node5.next = node6;
+		node6.next = node1;
+		
+		System.out.println(node1.next.next.next.data);
+		
+		/////测试节点的删除操作  删除  “feng”
+		
+		node2.next = node4;
+		node3.next = null;
+		System.out.println(node1.next.next.data);
+		
+		
+		/////测试节点的插入操作   插入feng
+		
+		
+		node2.next = node3;
+		node3.next = node4;
+		System.out.println(node1.next.next.data);
+		
+		
+		
+	}
+}

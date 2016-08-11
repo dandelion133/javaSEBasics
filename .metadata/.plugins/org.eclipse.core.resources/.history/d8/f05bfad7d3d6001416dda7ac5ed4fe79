@@ -1,0 +1,6 @@
+package com.uestc.qianhaifeng;
+///Set都是通过Iterrator来得到集合中的具体值
+public class IterratorTest
+{
+	
+}

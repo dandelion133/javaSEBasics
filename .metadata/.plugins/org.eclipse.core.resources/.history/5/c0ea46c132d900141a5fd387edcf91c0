@@ -1,0 +1,51 @@
+package com.uestc.qianhaifeng;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class GenericList<T extends List>
+{
+	private T[] foo;
+
+	public T[] getFoo()
+	{
+		return foo;
+	}
+
+	public void setFoo(T[] foo)
+	{
+		this.foo = foo;
+	}
+	
+	public static void main(String[] args)
+	{
+		//GenericList<ArrayList> foo1 = new GenericList<ArrayList>();
+		
+		ArrayList array = new ArrayList();
+
+		array.add("S");
+	//	array[0].add("2");
+	//	array[0].add("3");
+		
+		
+		//array[1].add("world");
+		//array[1].add("hello");
+
+	//	foo1.setFoo(array);
+		
+	   // ArrayList[] a = new ArrayList[2];
+	   		
+	//	a = foo1.getFoo();
+		String s = (String)array.get(0);
+		System.out.println(s);
+		//System.out.println(foo1.getFoo()[0].get(0));
+		
+		
+		
+		
+		
+		
+	}
+	
+}
